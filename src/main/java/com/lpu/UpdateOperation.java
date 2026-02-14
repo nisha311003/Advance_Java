@@ -16,7 +16,7 @@ public class UpdateOperation {
         Session session = sessionFactory.openSession();
 
         Transaction transaction = session.beginTransaction();
-
+        System.out.println("Updating data");
         Product product = (Product) session.get(Product.class,2);
         product.setPrice(500);
 

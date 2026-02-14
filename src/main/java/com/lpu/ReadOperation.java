@@ -18,7 +18,7 @@ public class ReadOperation {
         Session session = sessionFactory.openSession();
 
         Product product = (Product) session.get(Product.class, 1);
-
+        System.out.println("Reading data from database");
         System.out.println("Name of the product: "+product.getName()+"\nCategory: "+product.getCategory()+
                 "\nTotal Price: "+(product.getPrice()* product.getQunatity()));
 

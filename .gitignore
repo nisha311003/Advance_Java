@@ -10,7 +10,8 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
-src/main/resources/hibernate.cfg.xml
+
+hibernate.cfg.xml
 
 *.iws
 *.iml

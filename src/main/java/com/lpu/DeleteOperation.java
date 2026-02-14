@@ -18,6 +18,7 @@ public class DeleteOperation {
         Transaction transaction = session.beginTransaction();
 
         Product product = (Product)session.get(Product.class, 1);
+        System.out.println("Deleting data");
         session.remove(product);
 
         transaction.commit();

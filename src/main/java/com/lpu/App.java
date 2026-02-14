@@ -50,7 +50,6 @@ public class App
         transaction.commit();
 
         session.close();
-        sessionFactory.close();
 
 
     }
